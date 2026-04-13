@@ -32,8 +32,5 @@ public class pg_166_04
         {
             System.out.println("The written number doesn't have two digits. Please try again!");
         }
-
-        
-
     }
 }
