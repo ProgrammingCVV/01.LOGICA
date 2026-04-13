@@ -4,7 +4,8 @@ public class pg_166_04
     public static void main(String[] args)
     {
         Scanner enter = new Scanner(System.in);
-        int num ;
+        int num, digit;
+        int sum = 0;
 
         System.out.println("");
         System.out.println("JVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJ");
@@ -20,10 +21,14 @@ public class pg_166_04
             num *= -1;
         }
 
-        while(num > 0)
+        while(num >= 10 || num <= 99)
         {
-            
+            digit = num % 10;
+            num /= 10;
+            sum += digit; 
         }
+
+        System.out.println(sum);
 
     }
 }
