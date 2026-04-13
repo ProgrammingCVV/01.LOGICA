@@ -8,9 +8,9 @@ public class pg_166_04
         int sum = 0;
 
         System.out.println("");
-        System.out.println("JVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJ");
-        System.out.println("READ A TWO-DIGIT INTEGER AND DETERMINE WHAT THE SUM OF ITS DIGITS IS EQUAL TO");
-        System.out.println("JVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJ");
+        System.out.println("JVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVVJVJVJVJVJVJVJVJVJ");
+        System.out.println("READ A TWO-DIGIT INTEGER AND DETERMINE THE SUM OF ITS DIGITS");
+        System.out.println("JVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJJVJVJVJVJVJVJVJVJ");
         System.out.println("");
 
         System.out.print("Write an integer with two digits: ");
@@ -21,14 +21,19 @@ public class pg_166_04
             num *= -1;
         }
 
-        while(num >= 10 || num <= 99)
+        if(num >= 10 && num <= 99)
         {
             digit = num % 10;
             num /= 10;
-            sum += digit; 
+            sum = num + digit; 
+            System.out.println(sum);
+        }
+        else
+        {
+            System.out.println("The written number doesn't have two digits. Please try again!");
         }
 
-        System.out.println(sum);
+        
 
     }
 }
