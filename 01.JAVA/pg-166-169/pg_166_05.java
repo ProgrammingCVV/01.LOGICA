@@ -1,4 +1,6 @@
 import java.util.Scanner;
+public class pg_166_05
+{
 public static void main(String[] args)
 {
     Scanner enter = new Scanner(System.in);
@@ -18,7 +20,7 @@ public static void main(String[] args)
         num *= -1;
     }
     
-    if(num > 0)
+    if(num >= 10 && num <= 99)
     {
         dig2 = num % 10;
         dig1 = num / 10;
@@ -32,4 +34,9 @@ public static void main(String[] args)
             System.out.println("Both digits are not even.");
         }
     }
+    else
+    {
+        System.out.println("Invalid input. Please enter a two-digit integer.");
+    }
+}
 }
