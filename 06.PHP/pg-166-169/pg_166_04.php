@@ -8,7 +8,7 @@ echo("");
 
 $digit = 0;
 $sum = 0;
-$num = 95;
+$num = 65;
 echo($num . "<br><br>");
 
 
