@@ -9,7 +9,7 @@ i = 2;
 prime = True;
 
 if(num < 0):
-    
+
         print("The written number is negative ");
         num *= -1;
 
