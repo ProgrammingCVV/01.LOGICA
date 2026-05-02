@@ -17,11 +17,17 @@ function validateNumber()
     {
         num *= -1;
     }
-
+/*
     while(i <= num)
     {
         textar.value += i + ", ";
         i++;
+    }
+*/
+
+    for(i; i<=num; i++)
+    {
+        textar.value += i + " - ";
     }
     
 }
