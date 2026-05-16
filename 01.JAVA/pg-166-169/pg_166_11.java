@@ -8,9 +8,9 @@ public class pg_166_11
         int num1, num2;
 
         System.out.println("");
-        System.out.println("JVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJ");
-        System.out.println("READ TWO INTEGERS AND DETERMINE WICH IS THE GREATER");
-        System.out.println("JVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJ");
+        System.out.println("JVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJV");
+        System.out.println("READ TWO INTEGERS AND DETERMINE WHICH IS GREATER");
+        System.out.println("JVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJVJV");
         System.out.println("");
 
         System.out.print("Write the first number: ");
@@ -19,7 +19,7 @@ public class pg_166_11
         System.out.print("Write the second number: ");
         num2 = enter.nextInt();
 
-        if(num1 < num2)
+        if(num1 > num2)
         {
             System.out.println("The first number is greater than the second.");
         }
