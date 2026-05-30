@@ -12,7 +12,7 @@ if(num1 < 0):
 
 if(num2 < 0):
     num2 *= -1;
-
+"""
 for i in range(1, num1+1, 1):
     print(i, end="-");
 
@@ -20,3 +20,17 @@ print("");
 
 for j in range(1, num2+1, 1):
     print(j, end="-");
+
+"""
+i = 1;
+j = 1;
+
+while(i <= num1):
+    print(i, end="-");
+    i += 1;
+
+print("");
+
+while(j <= num2):
+    print(j, end="-");
+    j += 1;
