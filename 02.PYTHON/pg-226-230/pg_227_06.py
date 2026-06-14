@@ -41,4 +41,4 @@ if(num >= 100 and num <= 999):
         k += 1;
 
 else:
-    print("The written number doesn't have three digits. Please try again!");
+    print("The written number doesn't have three digits. Please try again!.");
