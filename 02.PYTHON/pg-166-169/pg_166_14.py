@@ -1,31 +1,29 @@
-print("")
-print("*********************************************************************************")
-print("READ AN INTEGER NUMBER WITH TWO DIGITS, AND DETERMINE IF IT IS PRIME AND NEGATIVE")
-print("*********************************************************************************")
-print("")
+print("");
+print("PYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYP");
+print("READ TWO TWO-DIGIT INTEGERS AND DETERMINE THE SUM OF ALL THE DIGITS");
+print("PYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYP");
+print("");
 
-count = 0
-num = int(input("Write an integer number whith two digits: "))
+num1 = int(input("Write the first integer: "));
+num2 = int(input("Write the second integer: "));
 
-if(num < 0):
-    num = num * (-1)
-    print("The written number is negative.")
+if(num1 < 0):
+    num1 *= -1;
+
+if (num2 < 0):
+    num2 *= -1;
+
+if(num1 >= 10 and num1 < 99):
+    dig2 = num1 % 10;
+    dig1 = num1 // 10;
 else:
-    print("The written number is positive.")
+    print("The written number doest'n have two digits. Please try again!");
 
-if(num >= 10 and num <= 99):
-
-    for i in range(2,num):
-        modal = num % i
-
-        if modal == 0:
-            count +=1
-
-    if count == 0:
-        print("The number is prime.")
-    else:
-        print("The number isn't prime.")
-
-
+if(num2 >= 10 and num2 < 99):
+    dig4 = num2 % 10;
+    dig3 = num2 // 10;
 else:
-    print("The written number doesn't have two digits. Try again please.")
+    print("The written number doest'n have two digits. Please try again!");
+
+print("The sum of all the digits is ", (dig1 + dig2 + dig3 + dig4));
+
