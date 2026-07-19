@@ -1,22 +1,21 @@
-print("")
-print("***********************************************************************************************")
-print("READ AN INTEGER NUMBER WITH THREE DIGITS AND DETERMINE HOW MUCH THE SUM OF IT'S DIGITS IS EQUAL")
-print("***********************************************************************************************")
-print("")
+print("");
+print("PYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYP");
+print("READ A THREE-DIGITS INTEGER AND DETERMINE THE SUM OF ITS DIGITS");
+print("PYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYPYP");
+print("");
 
-num = int(input("Write an integer number whit three digits: "))
+num = int(input("Write a three-digit integer: "));
 
 if(num < 0):
-    num = num * (-1)
+    num *= -1;
 
-if(num >= 100 and num <=999):
-    dig1 = (num // 100) % 10
-    dig2 = (num // 10) % 10
-    dig3 = num - (num // 10 * 10)
+if(num > 100 and num < 999):
+    dig3 = num % 10;
+    dig2 = num // 10 % 10;
+    dig1 = num // 100 % 10;
 
-    result = dig1 + dig2 + dig3
+    sum = dig1 + dig2 + dig3;
 
-    print("The result of the sum is: ", result)
-
+    print("The sum of all digits is: ", sum);
 else:
-    print("The written number doesn't have three digits. Try again please.")
+    print("The written number doesn't have three digits. Please try again!");
